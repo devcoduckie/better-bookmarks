@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600&display=swap");
+
+/* General Styling */
+
+body {
+  background-color: #f0f0f0;
+  font-family: "League Spartan", sans-serif;
+}
+
+#bookmark-section {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#browse-section {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.popup-container {
+  width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.url-fill-bar {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.note-section {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  /* font-family: "League Spartan", sans-serif; */
+}
+
+button {
+  font-family: "League Spartan", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 1rem;
+}
+
+button:hover {
+  background-color: #005bbf;
+}
+
+.circle-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+}
+
+.section-toggle-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button#browseButton {
+  background-color: #27ae60;
+  border-radius: 1rem;
+  width: 40%;
+}
+
+button#browseButton:hover {
+  background-color: #1a9e51;
+}
+
+/* Browse Section Styling */
+
+button#backToBookmark {
+  background-color: #3498db;
+  border-radius: 1rem;
+  width: 40%;
+}
+
+button#backToBookmark:hover {
+  background-color: #1988d2;
+}
+
+.bookmark-entry {
+  margin-bottom: 10px;
+  border: #fff solid 2px;
+  border-radius: 1rem;
+}
+
+.bookmark-title {
+  font-size: 16px;
+  margin: 10px 15px;
+  text-decoration: underline #005bbf;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.bookmark-note {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow-wrap: break-word;
+}
+
+.visit-delete-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+button.bookmark-visit-button {
+  width: 200px;
+}
+
+button.bookmark-delete-button {
+  background-color: white;
+  color: black;
+  width: 200px;
+}
+
+button.bookmark-delete-button:hover {
+  background-color: #f03030;
+}
+
+.bookmark-note {
+  text-align: left;
+}

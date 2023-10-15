@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Better Bookmarks</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="popup-container" id="bookmark-section" style="display: block">
+      <div class="section-toggle-btn-container">
+        <h2>betterbookmarks</h2>
+        <button id="browseButton">Browse My Bookmarks</button>
+      </div>
+      <div class="bookmark-section-container">
+        <div class="url-fill-bar">
+          <input type="text" id="urlInput" placeholder="URL to bookmark" />
+          <button class="circle-button" id="fillCurrentTab">+</button>
+        </div>
+        <div class="note-section">
+          <textarea id="note" placeholder="Enter your note..."></textarea>
+          <button id="bookmarkButton">Bookmark this page!</button>
+        </div>
+      </div>
+    </div>
+    <div class="popup-container" id="browse-section" style="display: none">
+      <div class="section-toggle-btn-container">
+        <h2>betterbookmarks</h2>
+        <button id="backToBookmark">Back to Bookmarking</button>
+      </div>
+      <div class="bookmark-list">
+        <!-- Bookmarks will be dynamically generated here -->
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
